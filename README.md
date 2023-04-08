@@ -16,7 +16,7 @@ sudo vim /usr/share/slapd/slapd.init.ldif
 
 find this line : include: file:///etc/ldap/schema/nis.ldif
 
-append a # at the beginning of the line, to make it a comment
+append a # at the beginning of the line, to make it as a comment
 
 
 and just below this commented line, add :
@@ -27,9 +27,9 @@ include: file:///etc/ldap/schema/rfc2307bis.ldif
 
 sudo dpkg-reconfigure slapd
 
-# 5) Verify that rfc2307bis is enable
+# 5) Verify that rfc2307bis is enabled
 
 sudo ldapsearch -LLL -Y external -H ldapi:/// -b cn=schema,cn=config -s one dn
 
-You should see this line in the output : dn: cn={2}rfc2307bis,cn=schema,cn=config
+If everything is OK, then you should see this line in the output : dn: cn={2}rfc2307bis,cn=schema,cn=config
 
