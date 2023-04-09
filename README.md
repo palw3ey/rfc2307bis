@@ -8,7 +8,7 @@ sudo apt install slapd ldap-utils
 
 # 2) Download rfc2307bis.ldif
 
-sudo wget https://github.com/palw3/rfc2307bis/releases/download/latest/rfc2307bis.ldif -O /etc/ldap/schema/rfc2307bis.ldif
+sudo wget https://github.com/palw3ey/rfc2307bis/releases/download/latest/rfc2307bis.ldif -O /etc/ldap/schema/rfc2307bis.ldif
 
 # 3) Edit slapd.init.ldif to replace rfc2307
 
