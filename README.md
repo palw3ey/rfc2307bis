@@ -1,6 +1,6 @@
 # rfc2307bis
 
-nis rfc2307 is obsolete, this README will help you to replace it by the new rfc2307bis.ldif
+nis rfc2307 is obsolete, this README will help you replace it with the new rfc2307bis.ldif
 
 # 1 - Install openldap and utils
 ```bash
